@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Furbook
+        psr4_prefix: Furbook
+        src_path: app
