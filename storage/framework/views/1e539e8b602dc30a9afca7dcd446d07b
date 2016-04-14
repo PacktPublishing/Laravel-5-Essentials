@@ -1,0 +1,9 @@
+<?php $__env->startSection('header'); ?>
+	<h2>About this site</h2>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+	<p>There are over <?php echo e($number_of_cats); ?> cats on this site!</p>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

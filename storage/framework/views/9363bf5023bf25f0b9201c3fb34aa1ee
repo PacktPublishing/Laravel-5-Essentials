@@ -1,0 +1,13 @@
+<?php $__env->startSection('header'); ?>
+	<h2>Add a new cat</h2>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+	<?php echo Form::open(['url' => '/cats']); ?>
+
+		<?php echo $__env->make('partials.forms.cat', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	<?php echo Form::close(); ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

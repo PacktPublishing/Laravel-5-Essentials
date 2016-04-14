@@ -1,0 +1,25 @@
+<?php $__env->startSection('header'); ?>
+	<a href="<?php echo e(url('/')); ?>">Back to overview</a>
+	<h2><?php echo e($cat->name); ?></h2>
+	<a href="<?php echo e(url('cats/'.$cat->id.'/edit')); ?>">
+		<span class="glyphicon glyphicon-edit"></span>
+		Edit
+	</a>
+	<a href="<?php echo e(url('cats/'.$cat->id.'/delete')); ?>">
+		<span class="glyphicon glyphicon-trash"></span>
+		Delete
+	</a>
+	<p>Last edited: <?php echo e($cat->updated_at->diffForHumans()); ?></p>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+	<p>Date of Birth: <?php echo e($cat->date_of_birth); ?></p>
+	<p>
+		<?php if($cat->breed): ?>
+			Breed:
+			<a href="<?php echo e(url('cats/breeds/'.$cat->breed->name)); ?>"><?php echo e($cat->breed->name); ?></a>
+		<?php endif; ?>
+	</p>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

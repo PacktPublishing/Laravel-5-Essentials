@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Furbook</title>
+		<link href="<?php echo e(asset('css/bootstrap.min.css')); ?>" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<?php echo $__env->yieldContent('header'); ?>
+			</div>
+			<?php if(Session::has('success')): ?>
+				<div class="alert alert-success">
+					<?php echo e(Session::get('success')); ?>
+
+				</div>
+			<?php endif; ?>
+			<?php echo $__env->yieldContent('content'); ?>
+		</div>
+	</body>
+</html>
