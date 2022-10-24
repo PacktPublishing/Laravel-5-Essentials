@@ -20,3 +20,7 @@ You can also refer to the following books:
 * [Laravel Application Development Blueprints](https://www.packtpub.com/web-development/laravel-application-development-blueprints?utm_source=github&utm_medium=related&utm_campaign=9781783282111)
 * [Learning Laravel 4 Application Development](https://www.packtpub.com/web-development/learning-laravel-4-application-development?utm_source=github&utm_medium=related&utm_campaign=9781783280575)
 * [Laravel Application Development Cookbook](https://www.packtpub.com/web-development/laravel-application-development-cookbook?utm_source=github&utm_medium=related&utm_campaign=9781782162827)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781785283017">https://packt.link/free-ebook/9781785283017 </a> </p>
